@@ -64,6 +64,12 @@ export const socials = [
     copy: 'zalvarel',
   },
   {
+    key: 'tiktok',
+    label: 'TikTok',
+    value: '@virneeyy',
+    href: 'https://www.tiktok.com/@virneeyy',
+  },
+  {
     key: 'instagram',
     label: 'Instagram',
     value: '@pokerel.zip',
@@ -107,13 +113,8 @@ export const education = [
     period: '2023 – 2026',
     major: 'Kompetensi Keahlian Teknik Komputer Jaringan',
     logo: asset('logo-smkn-prigen.png'),
-    logoAlt: 'Logo SMKN Prigen',
-    // Isi modal "Baca lebih lanjut" (CONTOH, sesuaikan dengan pengalamanmu)
-    details: [
-      'Mempelajari dasar jaringan komputer: pengalamatan IP, subnetting, routing, dan switching.',
-      'Praktik instalasi & konfigurasi server Linux (DNS, DHCP, web server, mail server).',
-      'Mengenal perangkat MikroTik dan Cisco melalui praktikum di lab.',
-    ],
+    logoAlt: 'Logo SMK Negeri Prigen',
+    website: 'https://smkn1prigen.sch.id/', // dibuka oleh tombol "Baca lebih lanjut"
   },
   {
     id: 'telkom-university',
@@ -122,12 +123,7 @@ export const education = [
     major: 'Program studi S1 Sistem Informasi',
     logo: asset('logo-telkom-university.png'),
     logoAlt: 'Logo Telkom University',
-    // CONTOH, sesuaikan
-    details: [
-      'Menempuh studi S1 Sistem Informasi.',
-      'Fokus mengembangkan minat di bidang infrastruktur jaringan dan keamanan informasi.',
-      'Aktif belajar mandiri lewat lab virtual (VirtualBox, Kali Linux, Wireshark).',
-    ],
+    website: 'https://telkomuniversity.ac.id/',
   },
 ];
 
@@ -144,6 +140,7 @@ export const experiences = [
     tags: ['Konfigurasi jaringan', 'Data entry', 'Komplain pelanggan', 'Desain grafis'],
     photo: asset('lancar-artha.jpg'),
     photoAlt: 'Wildan bersama tim PT. Lancar Artha Media Data',
+    photoPosition: 'center 40%', // bagian foto yang ditampilkan di kartu (object-position)
   },
   {
     id: 'terabyte',
@@ -156,6 +153,7 @@ export const experiences = [
     tags: ['Perangkat jaringan', 'Troubleshooting', 'Dokumentasi'],
     photo: asset('terabyte.jpg'),
     photoAlt: 'Wildan di kantor layanan BYTEHOME, PT. Terabyte Network Indonesia',
+    photoPosition: 'center 30%',
   },
 ];
 

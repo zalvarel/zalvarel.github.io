@@ -8,9 +8,9 @@ Portofolio pribadi interaktif bertema **Network & Security Enthusiast**, dibuat 
 - Background canvas *network topology* yang bereaksi ke kursor (jumlah node lebih sedikit di mobile)
 - Efek mengetik di subtitle hero, statistik dengan counter
 - Cursor glow (khusus desktop), scroll reveal, kartu dengan tilt 3D + spotlight
-- Tech stack "orbit": garis paket data mengalir ke bola, tooltip saat hover/fokus/tap
+- Tech stack "orbit": garis paket data mengalir ke bola berisi otak hologram, tooltip saat hover/fokus/tap
 - Timeline pengalaman yang terisi saat scroll, foto bisa dibuka di lightbox
-- Modal detail pendidikan, salin email/GitHub ke clipboard dengan toast
+- Tombol "Baca lebih lanjut" ke website sekolah/kampus, salin email/GitHub ke clipboard dengan toast
 - **Terminal easter egg**: klik ikon terminal di kanan bawah atau tekan `` ` ``
   - Perintah: `help`, `whoami`, `about`, `skills`, `experience`, `contact`, `ping wildan`, `nmap portfolio`, `goto <section>`, `clear`, `exit`
   - ↑/↓ untuk riwayat, Tab untuk autocomplete
@@ -39,7 +39,7 @@ Semua teks, link, dan kontak ada di **`src/data.js`**. Komponen tidak perlu dise
 | Angka statistik | `stats` |
 | WhatsApp, Instagram, Email, LinkedIn, GitHub | `socials` |
 | Tentang saya | `about` |
-| Pendidikan + isi modal | `education` |
+| Pendidikan + link website | `education` |
 | Pengalaman | `experiences` |
 | Tech stack + teks tooltip | `techStack` |
 | Teks boot screen / terminal | `bootLines`, `terminal` |

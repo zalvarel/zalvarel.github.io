@@ -85,7 +85,14 @@ export default function Experience() {
                     onClick={() => setLightbox(exp)}
                     aria-label={`Perbesar foto: ${exp.photoAlt}`}
                   >
-                    <img src={exp.photo} alt={exp.photoAlt} width="640" height="400" loading="lazy" />
+                    <img
+                      src={exp.photo}
+                      alt={exp.photoAlt}
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                      style={{ objectPosition: exp.photoPosition }}
+                    />
                     <span className="tl-photo__zoom" aria-hidden="true">
                       <ZoomIcon size={20} />
                     </span>

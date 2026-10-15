@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import { education } from '../data';
-import Modal from './Modal';
+import { ExternalIcon } from './icons';
 import TiltCard from './TiltCard';
 
 export default function Education() {
-  const [selected, setSelected] = useState(null);
-
   return (
     <section id="pendidikan" className="section" aria-labelledby="pendidikan-title">
       <div className="container container--narrow">
@@ -34,43 +31,21 @@ export default function Education() {
                   {e.school} <span className="edu__period">({e.period})</span>
                 </h3>
                 <p className="card__text">{e.major}</p>
-                <button
-                  type="button"
+                <a
+                  href={e.website}
                   className="btn btn--ghost btn--sm"
-                  onClick={() => setSelected(e)}
-                  aria-haspopup="dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Baca lebih lanjut
-                  <span className="sr-only"> tentang {e.school}</span>
-                </button>
+                  <span className="sr-only"> tentang {e.school} (membuka website di tab baru)</span>
+                  <ExternalIcon size={13} />
+                </a>
               </div>
             </TiltCard>
           ))}
         </div>
       </div>
-
-      <Modal open={!!selected} onClose={() => setSelected(null)} labelledBy="edu-modal-title">
-        {selected && (
-          <>
-            <div className="edu-modal__head">
-              <img src={selected.logo} alt="" width="56" height="56" className="edu__logo" />
-              <div>
-                <h3 id="edu-modal-title" className="modal__title">
-                  {selected.school}
-                </h3>
-                <p className="edu-modal__meta">
-                  {selected.period} · {selected.major}
-                </p>
-              </div>
-            </div>
-            <ul className="edu-modal__list">
-              {selected.details.map((d) => (
-                <li key={d}>{d}</li>
-              ))}
-            </ul>
-          </>
-        )}
-      </Modal>
     </section>
   );
 }

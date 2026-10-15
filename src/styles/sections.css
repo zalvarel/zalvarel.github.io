@@ -308,8 +308,8 @@
   height: 64px;
   border-radius: 50%;
   object-fit: contain;
-  background: #1a1035;
-  padding: 6px;
+  background: #fff;
+  padding: 4px;
   box-shadow: 0 0 0 1px rgba(196, 181, 253, 0.2);
 }
 .edu__card .card__title {
@@ -317,6 +317,9 @@
 }
 .edu__period {
   white-space: nowrap;
+}
+.edu__card .btn svg {
+  opacity: 0.8;
 }
 .edu__card .card__text {
   margin-bottom: 14px;
