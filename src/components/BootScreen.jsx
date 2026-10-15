@@ -15,9 +15,12 @@ const alreadyBooted = () => {
   }
 };
 
-/** Loading screen ala boot sequence. Sekali per sesi, bisa di-skip. */
+// Di HP/tablet (layar sentuh atau layar kecil) loading screen tidak ditampilkan
+const isMobile = () => window.matchMedia('(hover: none), (max-width: 820px)').matches;
+
+/** Loading screen ala boot sequence. Sekali per sesi, bisa di-skip, hanya di desktop. */
 export default function BootScreen() {
-  const [show, setShow] = useState(() => !alreadyBooted());
+  const [show, setShow] = useState(() => !isMobile() && !alreadyBooted());
   const [count, setCount] = useState(0);
   const [leaving, setLeaving] = useState(false);
 
