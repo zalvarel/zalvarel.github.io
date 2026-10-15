@@ -103,12 +103,6 @@ export const CloseIcon = (p) => (
     <path d="M6 6l12 12M18 6 6 18" />
   </Stroke>
 );
-export const TerminalIcon = (p) => (
-  <Stroke {...p}>
-    <rect x="2.5" y="4" width="19" height="16" rx="2.5" />
-    <path d="m7 9 3 3-3 3M12.5 15H17" />
-  </Stroke>
-);
 export const CopyIcon = (p) => (
   <Stroke {...p}>
     <rect x="9" y="9" width="12" height="12" rx="2" />

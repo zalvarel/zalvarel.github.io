@@ -11,9 +11,6 @@ Portofolio pribadi interaktif bertema **Network & Security Enthusiast**, dibuat 
 - Tech stack "orbit": garis paket data mengalir ke bola berisi otak hologram, tooltip saat hover/fokus/tap
 - Timeline pengalaman yang terisi saat scroll, foto bisa dibuka di lightbox
 - Tombol "Baca lebih lanjut" ke website sekolah/kampus, salin email/GitHub ke clipboard dengan toast
-- **Terminal easter egg**: klik ikon terminal di kanan bawah atau tekan `` ` ``
-  - Perintah: `help`, `whoami`, `about`, `skills`, `experience`, `contact`, `ping wildan`, `nmap portfolio`, `goto <section>`, `clear`, `exit`
-  - ↑/↓ untuk riwayat, Tab untuk autocomplete
 - Boot screen ala terminal (≤ 1,5 detik, bisa di-skip, sekali per sesi)
 - Menghormati `prefers-reduced-motion`; navigasi keyboard, aria-label, dan focus ring lengkap
 
@@ -42,7 +39,7 @@ Semua teks, link, dan kontak ada di **`src/data.js`**. Komponen tidak perlu dise
 | Pendidikan + link website | `education` |
 | Pengalaman | `experiences` |
 | Tech stack + teks tooltip | `techStack` |
-| Teks boot screen / terminal | `bootLines`, `terminal` |
+| Teks boot screen | `bootLines` |
 
 Gambar ada di **`public/assets/`**. Ganti file-nya dengan nama yang sama:
 
@@ -87,7 +84,7 @@ Repo ini dikonfigurasi untuk **user site** `zalvarel.github.io` (`base: '/'` di 
 │  ├─ data.js                 # ← SEMUA konten
 │  ├─ App.jsx, main.jsx
 │  ├─ components/             # Navbar, Hero, About, Education, Experience, TechStack,
-│  │                          # Contact, Footer, Terminal, BootScreen, NetworkCanvas,
+│  │                          # Contact, Footer, BootScreen, NetworkCanvas,
 │  │                          # CursorGlow, TiltCard, TypingText, Counter, Modal, Toast, icons
 │  ├─ hooks/                  # useMedia (reduced motion, pointer), useInView
 │  └─ styles/                 # base.css, sections.css, features.css

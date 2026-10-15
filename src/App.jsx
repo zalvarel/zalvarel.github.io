@@ -9,7 +9,6 @@ import Experience from './components/Experience';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Terminal from './components/Terminal';
 import { ToastProvider } from './components/Toast';
 
 /** Scroll reveal: tambahkan class `is-visible` ke setiap `.reveal` saat terlihat. */
@@ -52,7 +51,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <Terminal />
     </ToastProvider>
   );
 }

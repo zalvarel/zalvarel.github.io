@@ -189,22 +189,3 @@ export const bootLines = [
   '[  OK  ] Mengaktifkan firewall (ufw)',
   '[  OK  ] Menghubungkan ke portofolio...',
 ];
-
-/* ---------- Terminal easter egg ----------
- * Output perintah teks statis. Perintah dinamis (help, clear, nmap, dll.)
- * dibuat di src/components/Terminal.jsx memakai data di file ini.
- */
-export const terminal = {
-  user: 'guest',
-  host: 'wildan-sec',
-  welcome: [
-    'Selamat datang di wildan-sec shell v1.0',
-    "Ketik 'help' untuk melihat daftar perintah.",
-  ],
-  whoami: ['guest — tapi kamu sedang melihat portofolio milik Wildan Zalvarel Rizqullah 👋'],
-  about: [
-    'Wildan Zalvarel Rizqullah',
-    'Network & Security Enthusiast · S1 Sistem Informasi Telkom University',
-    'Suka ngoprek Linux, jaringan, dan keamanan lewat praktik langsung di lab.',
-  ],
-};
