@@ -13,7 +13,6 @@ import {
   siKalilinux,
   siNodedotjs,
   siPython,
-  siTiktok,
   siVirtualbox,
   siWhatsapp,
   siWireshark,
@@ -29,7 +28,6 @@ const CODEX =
 
 export const brandIcons = {
   whatsapp: brand(siWhatsapp),
-  tiktok: brand(siTiktok),
   instagram: brand(siInstagram),
   github: brand(siGithub),
   linkedin: { path: LINKEDIN, color: '#0A66C2' },

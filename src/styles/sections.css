@@ -493,9 +493,15 @@
 
 /* ---------- Kontak ---------- */
 .contact__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* flex + center: baris terakhir yang tidak penuh tetap rata tengah */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+}
+.contact__grid > li {
+  flex: 0 1 calc((100% - 40px) / 3);
+  min-width: 0;
 }
 .contact__card {
   display: flex;
@@ -534,9 +540,7 @@
 .contact__value {
   font-size: 0.8rem;
   color: var(--text-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: break-word;
 }
 /* Link menutupi seluruh kartu; tombol salin tetap bisa diklik di atasnya */
 .stretched::after {
@@ -566,14 +570,16 @@
 }
 
 @media (max-width: 860px) {
-  .contact__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .contact__grid > li {
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
 @media (max-width: 520px) {
   .contact__grid {
-    grid-template-columns: 1fr;
     gap: 14px;
+  }
+  .contact__grid > li {
+    flex-basis: 100%;
   }
 }
 

@@ -12,7 +12,7 @@ export const profile = {
   name: 'Wildan Zalvarel Rizqullah',
   shortName: 'Wildan',
   logo: 'WildanZalvarel',
-  photo: asset('profile.png'),
+  photo: asset('profile.jpg'),
   photoAlt: 'Foto Wildan Zalvarel Rizqullah memakai jas almamater Telkom University',
 };
 
@@ -53,40 +53,34 @@ export const socials = [
   {
     key: 'whatsapp',
     label: 'WhatsApp',
-    value: '+62 [nomor WA]',
-    href: 'https://wa.me/62xxxxxxxxxx', // format: 62 + nomor tanpa 0 di depan
+    value: '+62 821-4385-9137',
+    href: 'https://wa.me/6282143859137', // format: 62 + nomor tanpa 0 di depan
   },
   {
     key: 'github',
     label: 'GitHub',
-    value: 'zalvarel1-source',
-    href: 'https://github.com/zalvarel1-source',
-    copy: 'zalvarel1-source',
-  },
-  {
-    key: 'tiktok',
-    label: 'TikTok',
-    value: '@[username_tiktok]',
-    href: 'https://www.tiktok.com/@username_tiktok',
+    value: 'zalvarel',
+    href: 'https://github.com/zalvarel',
+    copy: 'zalvarel',
   },
   {
     key: 'instagram',
     label: 'Instagram',
-    value: '@[username_ig]',
-    href: 'https://www.instagram.com/username_ig',
+    value: '@pokerel.zip',
+    href: 'https://www.instagram.com/pokerel.zip',
   },
   {
     key: 'email',
     label: 'Email',
-    value: '[email kamu]',
-    href: 'mailto:emailkamu@example.com',
-    copy: 'emailkamu@example.com',
+    value: 'zalvarelwildan@gmail.com',
+    href: 'mailto:zalvarelwildan@gmail.com',
+    copy: 'zalvarelwildan@gmail.com',
   },
   {
     key: 'linkedin',
     label: 'LinkedIn',
-    value: '[nama LinkedIn]',
-    href: 'https://www.linkedin.com/in/username-linkedin',
+    value: 'Wildan Rizqullah',
+    href: 'https://www.linkedin.com/in/wildan-rizqullah-29a85540a',
   },
 ];
 

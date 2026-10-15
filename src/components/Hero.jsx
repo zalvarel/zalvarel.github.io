@@ -15,8 +15,8 @@ export default function Hero() {
           <img
             src={profile.photo}
             alt={profile.photoAlt}
-            width="420"
-            height="520"
+            width="840"
+            height="1040"
             fetchPriority="high"
           />
         </div>

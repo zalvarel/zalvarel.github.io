@@ -40,7 +40,18 @@ export default function Contact() {
                   >
                     {s.label}
                   </a>
-                  <span className="contact__value">{s.value}</span>
+                  <span className="contact__value">
+                    {/* <wbr> → email panjang turun baris tepat setelah "@" */}
+                    {s.key === 'email'
+                      ? s.value.split('@').map((part, i) => (
+                          <span key={i}>
+                            {i > 0 && '@'}
+                            {i > 0 && <wbr />}
+                            {part}
+                          </span>
+                        ))
+                      : s.value}
+                  </span>
                 </span>
                 {s.copy ? (
                   <button

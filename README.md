@@ -37,7 +37,7 @@ Semua teks, link, dan kontak ada di **`src/data.js`**. Komponen tidak perlu dise
 | Nama, foto profil | `profile` |
 | Teks hero, daftar teks mengetik | `hero` |
 | Angka statistik | `stats` |
-| WhatsApp, TikTok, Instagram, Email, LinkedIn, GitHub | `socials` |
+| WhatsApp, Instagram, Email, LinkedIn, GitHub | `socials` |
 | Tentang saya | `about` |
 | Pendidikan + isi modal | `education` |
 | Pengalaman | `experiences` |
@@ -48,7 +48,7 @@ Gambar ada di **`public/assets/`**. Ganti file-nya dengan nama yang sama:
 
 | File | Ukuran yang disarankan |
 | --- | --- |
-| `profile.png` | ± 840 × 1040 px (rasio 21:26), latar gelap/transparan |
+| `profile.jpg` | ± 840 × 1040 px (rasio 21:26), latar gelap/transparan |
 | `lancar-artha.jpg`, `terabyte.jpg` | ± 1280 × 800 px (rasio 16:10), maks. ~200 KB |
 | `logo-smkn-prigen.png`, `logo-telkom-university.png` | 128 × 128 px, PNG transparan |
 | `og-image.png` | 1200 × 630 px (gambar saat link dibagikan di sosmed) |
