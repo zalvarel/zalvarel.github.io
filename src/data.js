@@ -12,7 +12,7 @@ export const profile = {
   name: 'Wildan Zalvarel Rizqullah',
   shortName: 'Wildan',
   logo: 'WildanZalvarel',
-  photo: asset('profile.jpg'),
+  photo: asset('profile-wildan.jpg'),
   photoAlt: 'Foto Wildan Zalvarel Rizqullah memakai jas almamater Telkom University',
 };
 
