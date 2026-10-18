@@ -1,2 +1,2 @@
-# Portofolio Wildan Zalvarel Rizqullah
+# Portofolio
 <https://zalvarel.github.io/>
